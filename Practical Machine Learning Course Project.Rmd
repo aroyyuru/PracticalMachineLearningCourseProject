@@ -24,6 +24,7 @@ if(!file.exists("pml-testing.csv")){
 		destfile = "pml-testing.csv", method = "curl")
 }
 # load data
+
 train <- read.csv("pml-training.csv", header = TRUE, na.strings=c("","NA", "#DIV/0!"))
 test <- read.csv("pml-testing.csv", header = TRUE, na.strings=c("","NA", "#DIV/0!"))
 ```
